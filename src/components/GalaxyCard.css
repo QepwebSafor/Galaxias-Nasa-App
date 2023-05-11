@@ -1,0 +1,104 @@
+.GalaxyList {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  padding: 0 2rem 2rem;
+  background-color: black;
+  grid-auto-rows: minmax(100%, auto);
+  align-content: start;
+}
+/* Media query para pantallas grandes */
+@media screen and (max-width: 1199px) {
+  .GalaxyList {
+    grid-template-columns: repeat(2, 1fr); /* Reducimos a 10 columnas */
+  }
+}
+
+/* Media query para pantallas medianas */
+@media screen and (max-width: 991px) {
+  .GalaxyList {
+    grid-template-columns: repeat(1, 1fr); /* Reducimos a 8 columnas */
+  }
+}
+
+/* Media query para pantallas pequeñas */
+@media screen and (max-width: 767px) {
+  .GalaxyList {
+    grid-template-columns: repeat(1, 1fr); /* Reducimos a 6 columnas */
+  }
+}
+
+/* Media query para pantallas extra pequeñas */
+@media screen and (max-width: 575px) {
+  .GalaxyList {
+    grid-template-columns: repeat(2, 1fr); /* Reducimos a 4 columnas */
+  }
+}
+.Item {
+  grid-column: span 3; /* Este elemento ocupa 3 columnas */
+}
+/* Media query para pantallas más pequeñas */
+@media screen and (max-width: 768px) {
+  .Item {
+    grid-column: span 2; /* Este elemento ocupa 2 columnas */
+  }
+}
+
+/* Media query para pantallas aún más pequeñas */
+@media screen and (max-width: 480px) {
+  .Item {
+    grid-column: span 1; /* Este elemento ocupa 1 columna */
+  }
+}
+
+.image-container {
+  max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+}
+
+.image-container img {
+  width: 100%; /* La imagen ocupará todo el ancho del contenedor */
+  height: auto; /* La altura se ajustará automáticamente para mantener la proporción */
+  object-fit: cover;
+}
+
+.cardGalaxy {
+  background-color: black;
+  color: white;
+  border: 1px solid #202020;
+  height: fit-content;
+  text-align: left;
+
+}
+.title {
+  text-align: center;
+}
+
+.info-container {
+  margin: .3rem;
+}
+.icon {
+  margin-bottom: 0.5rem;
+}
+.keyword-container {
+  display: flex;
+  flex-direction: row;
+  column-gap: 0.25rem;
+  flex-wrap: wrap;
+  row-gap: 0.25rem;
+}
+.keyword {
+  background: #2646A6;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 8px;
+  font-size: 0.65rem;
+}
+.description {
+  display: block;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  overflow: hidden;
+  line-height: 1.8em;
+  font-size: 0.75rem;
+}
