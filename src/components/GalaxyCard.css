@@ -7,8 +7,7 @@
   border: 1px solid #202020;
   height: fit-content;
   text-align: left;
-  width: auto;
-
+  overflow: hidden;
 }
 .image-container {
 
