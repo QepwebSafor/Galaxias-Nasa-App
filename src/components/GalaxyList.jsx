@@ -1,22 +1,22 @@
 import GalaxieCard from './GalaxyCard';
-
+import './GalaxyList.css';
 const GalaxieList = ({ galaxies }) => {
   return (
     <div className='GalaxyList'>
-      {galaxies.map((galaxy) => {
+      {galaxies.map((galaxy, index) => {
         return (
+          <div className='Item' key={index} >
           <GalaxieCard
           galaxy={galaxy} 
-           
+        
           />
+          </div>
         );
       })}
     </div>
   );
 };
 
-GalaxieList.defaultProps = {
-  galaxys: Array(10).fill(''),
-};
+
 
 export default GalaxieList;

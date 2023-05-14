@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const GalaxieCard = ({ galaxy}) => {
 
   const galaxyData = galaxy.data[0];
-  console.log('Galaxy Data', galaxyData )
+  
   const galaxyImage = galaxy.links?.length ? galaxy.links[0].href : 'https://i.imgur.com/GHqELEK.jpeg'
-  console.log('Galaxy Image', galaxyImage )
+
   const renderMediaTypeIcon = (mediaType) => {
     const mediaIcon = {
       'image': faImage,
@@ -36,7 +36,7 @@ const GalaxieCard = ({ galaxy}) => {
   
 
   return (
-    <Card className="cardGalaxy">
+    <Card className="galaxy-card" >
     <h3 className='title'>{galaxyData.title}</h3>
     <div className='image-container'>
     <img src={galaxyImage}  alt={galaxyData.title} />
