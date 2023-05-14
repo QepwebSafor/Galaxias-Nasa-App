@@ -8,6 +8,7 @@
   height: fit-content;
   text-align: left;
   width: auto;
+  overflow: hidden;
 
 }
 .image-container {
