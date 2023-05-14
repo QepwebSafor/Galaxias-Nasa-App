@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/Galaxias-Nasa-App/static/css/main.ae31145f.css",
+    "main.css": "/Galaxias-Nasa-App/static/css/main.e9276da6.css",
     "main.js": "/Galaxias-Nasa-App/static/js/main.e8d3b4eb.js",
     "index.html": "/Galaxias-Nasa-App/index.html",
-    "main.ae31145f.css.map": "/Galaxias-Nasa-App/static/css/main.ae31145f.css.map",
+    "main.e9276da6.css.map": "/Galaxias-Nasa-App/static/css/main.e9276da6.css.map",
     "main.e8d3b4eb.js.map": "/Galaxias-Nasa-App/static/js/main.e8d3b4eb.js.map"
   },
   "entrypoints": [
-    "static/css/main.ae31145f.css",
+    "static/css/main.e9276da6.css",
     "static/js/main.e8d3b4eb.js"
   ]
 }
