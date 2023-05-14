@@ -1,10 +1,10 @@
 .GalaxyList {
   display: grid;
-  grid-template-columns:  repeat(12, 1fr);;
+  grid-template-columns: repeat(12, 1fr);
   gap: 1rem;
   padding: 0 3rem 3rem;
-  align-content:start;
-
+  align-content: start;
+  margin: 2px;
 }
 /* Media query para pantallas grandes */
 @media screen and (max-width: 1199px) {
@@ -56,5 +56,3 @@
     /* Este elemento ocupa 1 columna */
   }
 }
-
-
